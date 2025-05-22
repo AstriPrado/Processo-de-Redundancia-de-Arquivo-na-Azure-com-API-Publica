@@ -2,7 +2,7 @@
 # 🚀 Processos de Redundância de Arquivos na Azure com API Pública (IBGE - IPCA)
 
 ## 🎯 Objetivo
-Este projeto tem como objetivo demonstrar a criação de um processo de redundância de arquivos utilizando serviços na Azure. Através do **Azure Data Factory**, conectamos uma API pública do IBGE, extraímos dados do **IPCA (Índice de Preços ao Consumidor Amplo)** e armazenamos os dados em um **Blob Storage** no formato **JSON**.
+Este projeto tem como objetivo demonstrar a criação de um processo de cópia de arquivo utilizando serviços na Azure. Através do **Azure Data Factory**, conectamos uma API pública do IBGE, extraímos dados do **IPCA (Índice de Preços ao Consumidor Amplo)** e armazenamos os dados em um **Blob Storage** no formato **JSON**.
 
 ---
 
