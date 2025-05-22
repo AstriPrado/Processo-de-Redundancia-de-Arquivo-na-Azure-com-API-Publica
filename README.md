@@ -20,7 +20,9 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Definição da URL base da API que fornece os dados do **IPCA (Índice de Preços ao Consumidor Amplo)**.
 - Este Linked Service será usado no Dataset de origem dentro do pipeline.
 
-🖼️ ![Imagem - Linked Service de Origem](IMG/imagem1.png)
+![Imagem - Linked Service de Origem](LINK IMAGEM 1)
+
+![Imagem - Linked Service de Origem](LINK IMAGEM 2)
 
 ---
 
@@ -28,7 +30,9 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Criação da conexão com o **Azure Blob Storage**, utilizado como repositório para armazenar os dados extraídos da API.
 - Configuração do acesso utilizando a **String de Conexão** da Storage Account.
 
-🖼️ ![Imagem - Linked Service de Destino](INSIRA_LINK_DA_IMAGEM_AQUI)
+![Imagem - Linked Service de Destino](IMG/imagem3.png)
+
+![Imagem - Linked Service de Destino](IMG/imagem4.png)
 
 ---
 
@@ -36,7 +40,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Criação do pipeline no **Azure Data Factory**, responsável por orquestrar o processo de extração e carga dos dados.
 - Utilização da atividade **Copy Data**, que será configurada com os datasets de origem e destino.
 
-🖼️ ![Imagem - Pipeline Criado](INSIRA_LINK_DA_IMAGEM_AQUI)
+![Imagem - Linked Service de Destino](IMG/imagem 5.png)
 
 ---
 
@@ -45,7 +49,9 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Conectado ao **Linked Service REST (API IBGE)**, utilizando o endpoint da API que retorna os dados do IPCA dos últimos 12 meses.
 - Definido no formato **JSON**.
 
-🖼️ ![Imagem - Dataset de Origem](INSIRA_LINK_DA_IMAGEM_AQUI)
+![Imagem - Linked Service de Destino](IMG/imagem6.png)
+
+![Imagem - Linked Service de Destino](IMG/imagem7.png)
 
 ---
 
@@ -55,8 +61,11 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
   - Container de armazenamento.
   - Formato de saída dos dados: **JSON**.
 
-🖼️ ![Imagem - Dataset de Destino](INSIRA_LINK_DA_IMAGEM_AQUI)
+![Imagem - Linked Service de Destino](IMG/imagem8.png)
 
+![Imagem - Linked Service de Destino](IMG/imagem9.png)
+
+![Imagem - Linked Service de Destino](IMG/imagem_destino_container.png)
 ---
 
 ### 6️⃣ Execução do Pipeline
@@ -64,12 +73,14 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Após a execução, os dados são gravados no Blob Storage no formato JSON.
 - Verificação no Blob Storage para confirmar a criação correta dos arquivos e a integridade dos dados.
 
-🖼️ ![Imagem - Execução e Resultado](INSIRA_LINK_DA_IMAGEM_AQUI)
+![Imagem - Linked Service de Destino](IMG/imagem10.png)
 
 ---
 
 ## 📄 Resultado
 O arquivo JSON gerado contém os dados do IPCA (variação mensal) dos últimos 12 meses, extraídos da API do IBGE e armazenados no Azure Blob Storage.
+
+![Imagem - Linked Service de Destino](IMG/imagem12.png)
 
 ## 🚀 Tecnologias Utilizadas
 - Azure Data Factory
