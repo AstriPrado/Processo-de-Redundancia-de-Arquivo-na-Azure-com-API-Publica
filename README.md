@@ -65,7 +65,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 
 ![Imagem - Linked Service de Destino](IMG/imagem9.png)
 
-![Imagem - Linked Service de Destino](IMG/imagem_destino_container.png)
+![Imagem - Linked Service de Destino](IMG/imagem10.png)
 ---
 
 ### 6️⃣ Execução do Pipeline
@@ -73,7 +73,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Após a execução, os dados são gravados no Blob Storage no formato JSON.
 - Verificação no Blob Storage para confirmar a criação correta dos arquivos e a integridade dos dados.
 
-![Imagem - Linked Service de Destino](IMG/imagem10.png)
+![Imagem - Linked Service de Destino](IMG/imagem11.png)
 
 ---
 
