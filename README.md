@@ -28,7 +28,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 
 ### 2️⃣ Criação do Linked Service de Destino (Blob Storage)
 - Criação da conexão com o **Azure Blob Storage**, utilizado como repositório para armazenar os dados extraídos da API.
-- Configuração do acesso utilizando a **String de Conexão** da Storage Account.
+- Configuração do acesso utilizando a Storage Account criada anteriormente.
 
 ![Imagem - Linked Service de Destino](IMG/imagem3.png)
 
@@ -44,7 +44,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 
 ---
 
-### 4️⃣ Criação do Dataset de Origem (dentro do Pipeline)
+### 4️⃣ Criação do Dataset de Origem
 - Dataset configurado diretamente dentro da atividade **Copy Data**.
 - Conectado ao **Linked Service REST (API IBGE)**, utilizando o endpoint da API que retorna os dados do IPCA dos últimos 12 meses.
 - Definido no formato **JSON**.
@@ -55,11 +55,11 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 
 ---
 
-### 5️⃣ Criação do Dataset de Destino (dentro do Pipeline)
+### 5️⃣ Criação do Dataset de Destino
 - Dataset criado dentro da atividade **Copy Data**.
 - Aponta para o **Linked Service do Blob Storage**, definindo:
-  - Container de armazenamento.
   - Formato de saída dos dados: **JSON**.
+  - Container de armazenamento.
 
 ![Imagem - Linked Service de Destino](IMG/imagem8.png)
 
@@ -75,12 +75,49 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 
 ![Imagem - Linked Service de Destino](IMG/imagem11.png)
 
+![Imagem - Linked Service de Destino](IMG/imagem12.png)
 ---
 
 ## 📄 Resultado
-O arquivo JSON gerado contém os dados do IPCA (variação mensal) dos últimos 12 meses, extraídos da API do IBGE e armazenados no Azure Blob Storage.
+O arquivo JSON gerado contém os dados do IPCA (variação mensal) dos últimos 12 meses, extraídos da API do IBGE e armazenados no Azure Blob Storage, conforme exemplo abaixo:
 
-![Imagem - Linked Service de Destino](IMG/imagem12.png)
+```json
+{
+  "id": "63",
+  "variavel": "IPCA - Variação mensal",
+  "unidade": "%",
+  "resultados": [
+    {
+      "series": [
+        {
+          "localidade": {
+            "id": "1",
+            "nivel": {
+              "id": "N1",
+              "nome": "Brasil"
+            },
+            "nome": "Brasil"
+          },
+          "serie": {
+            "202305": "0.23",
+            "202306": "-0.08",
+            "202307": "0.12",
+            "202308": "0.23",
+            "202309": "0.26",
+            "202310": "0.24",
+            "202311": "0.28",
+            "202312": "0.56",
+            "202401": "0.42",
+            "202402": "0.83",
+            "202403": "0.16",
+            "202404": "0.38"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## 🚀 Tecnologias Utilizadas
 - Azure Data Factory
