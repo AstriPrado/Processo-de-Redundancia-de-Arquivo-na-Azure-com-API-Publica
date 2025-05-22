@@ -40,7 +40,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Criação do pipeline no **Azure Data Factory**, responsável por orquestrar o processo de extração e carga dos dados.
 - Utilização da atividade **Copy Data**, que será configurada com os datasets de origem e destino.
 
-![Imagem - Linked Service de Destino](IMG/imagem 5.png)
+![Imagem - Linked Service de Destino](IMG/imagem5.png)
 
 ---
 
@@ -91,4 +91,4 @@ O arquivo JSON gerado contém os dados do IPCA (variação mensal) dos últimos 
 ---
 
 ## ✍️ Autor
-Astri 🚀
+Astri Prado
