@@ -8,7 +8,7 @@ Este projeto tem como objetivo demonstrar a criação de um processo de cópia d
 
 ## 🔗 Fonte dos Dados
 - API Pública do IBGE — IPCA (Variação Mensal)  
-→ [Documentação IBGE API](https://servicodados.ibge.gov.br/api/docs/agregados)  
+→ [Documentação IBGE API](https://servicodados.ibge.gov.br/api/docs/agregados?versao=3)  
 → Endpoint utilizado:  
 `https://servicodados.ibge.gov.br/api/v3/agregados/1737/periodos/202305-202404/variaveis/63?localidades=N1[all]`
 
