@@ -20,7 +20,7 @@ Este projeto tem como objetivo demonstrar um processo de redundância de arquivo
 - Definição da URL base da API que fornece os dados do **IPCA (Índice de Preços ao Consumidor Amplo)**.
 - Este Linked Service será usado no Dataset de origem dentro do pipeline.
 
-🖼️ ![Imagem - Linked Service de Origem](INSIRA_LINK_DA_IMAGEM_AQUI)
+🖼️ ![Imagem - Linked Service de Origem](IMG/imagem1.png)
 
 ---
 
